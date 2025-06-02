@@ -50,7 +50,7 @@
     }
 
     .project-card:hover .project-title {
-      color: white;
+      color: rgb(140, 158, 148);
       text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     }
 
@@ -107,7 +107,24 @@
       class="bg-black bg-opacity-50 px-8 py-16 max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center gap-10">
 
       <!-- Profile Image -->
-      <img src="./pp.png" alt="Swaraj Jogi" class="w-40 h-40 rounded-full border-4 border-white shadow-lg">
+      <img src="./pp.png" alt="Swaraj Jogi" class="w-40 h-40 rounded-full border-4 border-white shadow-lg"
+        style="animation: float 3s ease-in-out infinite;">
+
+      <style>
+        @keyframes float {
+          0% {
+            transform: translateY(0);
+          }
+
+          50% {
+            transform: translateY(-10px);
+          }
+
+          100% {
+            transform: translateY(0);
+          }
+        }
+      </style>
 
       <!-- Text -->
       <div class="text-center md:text-left">
@@ -125,6 +142,7 @@
   <section id="projects" class="py-16 bg-[#FAF9F6] border-t border-gray-200 animate__animated animate__fadeInUp">
     <div class="max-w-5xl mx-auto px-4">
       <h3 class="text-3xl font-semibold mb-10 text-center">Projects</h3>
+
 
       <!-- Project Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -157,8 +175,9 @@
         </a>
 
         <!-- Project 4 -->
-        <a href="https://example.com/project4" target="_blank" class="project-card block shadow-md cursor-pointer">
-          <img src="project4.jpg" alt="Project 4" class="w-full h-48 object-cover">
+        <a href="https://www.figma.com/design/acngZzQx8gmGp6r2hsfr62/skymark?node-id=0-1&p=f&t=hePHdVolYf1gGVZn-0"
+          target="_blank" class="project-card block shadow-md cursor-pointer">
+          <img src="skymark.png" alt="Project 4" class="w-full h-48 object-cover">
           <div class="project-content p-4 bg-white">
             <h4 class="project-title text-xl font-semibold transition-colors duration-300">Mobile App Design – FitTrack
             </h4>
